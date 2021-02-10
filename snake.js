@@ -22,13 +22,13 @@ let d;
 document.addEventListener("keydown", pressed);
 
 function pressed(event){
-    if (event.keyCode == 37){
+    if (event.keyCode == 37 && d!="RIGHT"){
         d="LEFT";
-    }if (event.keyCode == 38){
+    }if (event.keyCode == 38  && d!='DOWN'){
         d="UP";
-    }if (event.keyCode == 39){
+    }if (event.keyCode == 39 && d!='LEFT'){
         d="RIGHT";
-    }if (event.keyCode == 40){
+    }if (event.keyCode == 40 && d!='UP'){
         d="DOWN";
     }
 }
